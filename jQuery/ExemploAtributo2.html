@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Alterando vários atributos</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function (){
+                    $("button").click(function (){
+                        $("a").attr("href", "2.html");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="http://www.devisate.com">Link</a><br>
+        <a href="http://www.google.com">Outro link</a><br>
+        <button>Alterar links</button>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE >
+<html lang="pt-br">
+    <head>
+       <title>Usando setter</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+             $(document).ready(function() {
+                $("#b1").click(function() {
+                   $("#p1").text("Novo Texto");
+            });
+                $("#b2").click(function() {
+                   $("#p2").html("<strong>Novo Texto HTML</strong>");
+            });
+                $("#b3").click(function() {
+                   $("#nome").val("Novo Conteúdo");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <h1>Altera o text, html e value</h1>
+        <p id="p1">Isso é um parágrafo</p>
+        <p id="p2">Isso é outro parágrafo</p>
+        Nome: <input type="text" id="nome" value="Alessandro"/><br><br>
+        <button id="b1">Set Text</button>
+        <button id="b2">Set HTML</button>
+        <button id="b3">Set Value</button>
+    </body>
+</html>

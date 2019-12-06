@@ -1,0 +1,43 @@
+<!DOCTYPE >
+<html lang="pt-br">
+    <head>
+       <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js" type="text/javascript"></script> 
+        <script>
+            $(document).ready(function (){
+                $("img").click(function(){
+                    var caminho = $(this).attr("src");
+                    $("#principal").attr("src", caminho);
+                });
+            }); 
+        </script>
+            <style type ="text/css">
+                #grande{
+                    width: 400px;
+                    height: 300px;
+                    background-color: blue;
+                }
+                .miniaturas{
+                    float: left;
+                    height: 60px;
+                    width: 80px;
+                    background-color: red;
+                    margin: 10px;
+                }
+            </style>
+    </head>
+    <body>
+      <div>
+          <div id="grande">
+              <img id="principal" src="img/amarelo.jpg" alt="" width="400" height="300"/>
+      </div>
+         <div id="pequenas">
+             <img class="miniaturas" src="img/amarelo.jpg" alt="" width="80"/>
+             <img class="miniaturas" src="img/azul.jpg" alt="" width="80"/>
+            <img class="miniaturas" src="img/verde.jpg" alt="" width="80"/>
+            <img class="miniaturas" src="img/vermelho.jpg" alt="" width="80"/>
+         </div>
+      </div>
+    </body>
+</html>

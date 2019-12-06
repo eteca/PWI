@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+       <title>Alterando atributos ao clicar</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+                 $(document).ready(function() {
+                    $("button").click(function() {
+                        $("p").hide(2000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1><marquee>Oculta todas as tags 'p' ao clicar no botão</marquee></h1>
+        <h2>Cabeçalho</h2>
+        <p>isso é um parágrafo</p>
+        <p>isso também é um parágrafo</p> 
+        <button>Clique aqui!</button><br>
+    </body>
+</html>

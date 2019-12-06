@@ -1,0 +1,19 @@
+<!DOCTYPE >
+<html lang="pt-br">
+    <head>
+       <title>Obtem o Value de um Imput</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+             $(document).ready(function() {
+                $("button").click(function() {
+                    alert("valor:   " + $("#nome").val());
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <p>Nome: <input type="text" id="nome" value="Alessandro"></p>  
+        <button>ver valor</button>
+    </body>
+</html>

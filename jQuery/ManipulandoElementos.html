@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html lang="pt-br">
+    <head>
+       <title>Manipulando Elementos</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+             $(document).ready(function() {
+                $("#b1").click(function() {
+                    alert("texto:   " + $("p").text());
+            });
+                $("#b2").click(function() {
+                    alert("HTML:   " + $("p").html());
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <p>Texto usando <b>negrito</b></p>  
+        <button id="b1">ver text</button>
+        <button id="b2">ver html</button>
+    </body>
+</html>
